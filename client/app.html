@@ -4,22 +4,28 @@
 <div class="container-fluid">
   <router-outlet></router-outlet>
 </div>
-<div class="row">
-  <div class="col-md-6">
-    <ul class="list-group">
-      <li *ngFor="#event of events"
-          class="list-group-item ma-event-item">
-        <div class="row">
-          <div class="col-sm-8">
-            <h2 class="ma-event-name">
-              {{event.name}}
-            </h2>
-            <p class="ma-event-description">
-              {{event.description}}
-            </p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Coming Up</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="list-group">
+        <button type="button" class="list-group-item ma-event-item" *ngFor="#event of events">
+          <div class="row">
+            <div class="col-sm-8">
+              <h2 class="ma-event-name">
+                {{event.name}}
+              </h2>
+              <p class="ma-event-description">
+                {{event.description}}
+              </p>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
+        </button>
+      </div>
+    </div>
   </div>
 </div>
