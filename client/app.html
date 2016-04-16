@@ -1,0 +1,25 @@
+<nav class="navbar navbar-light bg-faded">
+  <a class="navbar-brand" href="#"><img class="logo" src="/images/logo.jpg" /></a>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <ul class="list-group">
+      <li *ngFor="#event of events"
+          class="list-group-item ma-event-item">
+        <div class="row">
+          <div class="col-sm-8">
+            <h2 class="ma-event-name">
+              {{event.name}}
+            </h2>
+            <p class="ma-event-description">
+              {{event.description}}
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
