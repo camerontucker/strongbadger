@@ -2,7 +2,7 @@ import 'reflect-metadata';
 import 'zone.js/dist/zone';
 import 'bootstrap4-webpack-package';
 
-import '/imports/ui/style.scss'; 
+import '/imports/ui/style.scss';
 
 import {NgZone, Component} from 'angular2/core';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
