@@ -4,23 +4,25 @@ import 'bootstrap4-webpack-package';
 
 import '/imports/ui/style.scss';
 
-import {NgZone, Component} from 'angular2/core';
+import {Component, NgZone, provide} from '@angular/core';
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
-import {Events} from '../collections/events';
 import {Tracker} from 'meteor/tracker';
+import { ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig, RouterLink, Router } from '@angular/router-deprecated';
+import { APP_BASE_HREF } from '@angular/common';
+import { ComingSoon } from './imports/coming-soon/coming-soon.ts';
+import { EventList } from './imports/event-list/event-list.ts';
 
 @Component({
   selector: 'app',
-  templateUrl: 'client/app.html'
+  templateUrl: 'client/app.html',
+  directives: [RouterLink, ROUTER_DIRECTIVES]
 })
+@RouteConfig([
+  { path: '/coming-soon', name: 'ComingSoon', component: ComingSoon, useAsDefault: true },
+  { path: '/events', name: 'EventList', component: EventList }
+])
+
 class StrongBadger {
-    events: Mongo.Cursor<Object>;
-    
-    constructor(zone: NgZone) {
-        Tracker.autorun(() => zone.run(() => {
-            this.events = Events.find();
-        }));
-    }
 }
  
-bootstrap(StrongBadger);
+bootstrap(StrongBadger, [ROUTER_PROVIDERS, provide(APP_BASE_HREF, { useValue: '/' })]);

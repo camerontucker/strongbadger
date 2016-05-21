@@ -89,12 +89,12 @@ body {
   margin-left: 1rem;
 }
 
-.nav-masthead .active {
+.nav-masthead .router-link-active {
   color: #fff;
-  border-bottom-color: #fff;
+  border-bottom-color: #fff!important;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 40em) {
   .masthead-brand {
     float: left;
   }
@@ -197,4 +197,11 @@ body {
   .lead {
     font-size: 1rem;
   }
+}
+
+/* Events */
+
+ul.event-list li {
+  background-color: #000;
+  border:none;
 }

@@ -6,26 +6,13 @@
           <img class="masthead-brand logo" src="/images/logo.jpg" />
           <img class="masthead-brand circlelogo" src="/images/circlelogo.png" />
           <nav class="nav nav-masthead">
-            <a class="nav-link active" href="#">Coming Soon</a>
-            <a class="nav-link" href="#">Events</a>
+            <a class="nav-link" [routerLink]="['/ComingSoon']">Coming Soon</a>
+            <a class="nav-link" [routerLink]="['/EventList']">Events</a>
             <a class="nav-link" href="#">Coffee</a>
           </nav>
         </div>
       </div>
-      <div class="inner cover">
-        <h1 class="cover-heading">Coming Spring/Summer 2016!!!</h1>
-        <p class="lead">Coffee collides with the arts in the west end of Winnipeg</p>
-      </div>
-      <div class="mastfoot">
-        <div class="inner">
-          <p>679 Sargent Avenue (204) 500-1382<br />brock@strongbadgercoffee.ca</p>
-          <p>
-            <a href="https://www.facebook.com/strongbadgercoffee"><i class="fa fa-facebook-square fa-lg" aria-hidden="true"></i></a>
-            <a href="https://instagram.com/strongbadgercoffee"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-            <a href="https://github.com/camerontucker/strongbadger"><i class="fa fa-github-square fa-lg" aria-hidden="true"></i></a>
-          </p>
-        </div>
-      </div>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
