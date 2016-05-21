@@ -199,9 +199,4 @@ body {
   }
 }
 
-/* Events */
-
-ul.event-list li {
-  background-color: #000;
-  border:none;
-}
+@import "../imports/event-list/event-list";
