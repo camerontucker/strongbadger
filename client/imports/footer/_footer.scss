@@ -1,0 +1,25 @@
+.mastfoot {
+  color: rgba(255,255,255,.5);
+}
+@media (min-width: 40em) {
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  .mastfoot {
+    width: 100%;
+  }
+}
+@media (min-width: 62em) {
+  .mastfoot {
+    width: 42rem;
+  }
+}
+@media (max-width:25em) {
+  .mastfoot {
+    .inner {
+      padding: 0;
+      font-size: 0.75rem;
+    }
+  }
+}

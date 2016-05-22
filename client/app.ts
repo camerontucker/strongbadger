@@ -12,11 +12,12 @@ import { APP_BASE_HREF } from '@angular/common';
 import { ComingSoon } from './imports/coming-soon/coming-soon.ts';
 import { Coffee } from './imports/coffee/coffee.ts';
 import { EventList } from './imports/event-list/event-list.ts';
+import { Footer } from './imports/footer/footer.ts';
 
 @Component({
   selector: 'app',
   templateUrl: 'client/app.html',
-  directives: [RouterLink, ROUTER_DIRECTIVES]
+  directives: [RouterLink, ROUTER_DIRECTIVES, Footer]
 })
 @RouteConfig([
   { path: '/coming-soon', name: 'ComingSoon', component: ComingSoon, useAsDefault: true },

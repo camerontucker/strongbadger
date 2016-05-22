@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterLink }  from '@angular/router-deprecated';
+import { Footer } from '../footer/footer.ts';
 
 @Component({
   selector: 'coming-soon',
   templateUrl: 'client/imports/coming-soon/coming-soon.html',
-  directives: [RouterLink]
+  directives: [Footer]
 })
 
 export class ComingSoon {
