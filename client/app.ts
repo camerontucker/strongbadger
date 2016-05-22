@@ -10,6 +10,7 @@ import {Tracker} from 'meteor/tracker';
 import { ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig, RouterLink, Router } from '@angular/router-deprecated';
 import { APP_BASE_HREF } from '@angular/common';
 import { ComingSoon } from './imports/coming-soon/coming-soon.ts';
+import { Coffee } from './imports/coffee/coffee.ts';
 import { EventList } from './imports/event-list/event-list.ts';
 
 @Component({
@@ -19,6 +20,7 @@ import { EventList } from './imports/event-list/event-list.ts';
 })
 @RouteConfig([
   { path: '/coming-soon', name: 'ComingSoon', component: ComingSoon, useAsDefault: true },
+  { path: '/coffee', name: 'Coffee', component: Coffee },
   { path: '/events', name: 'EventList', component: EventList }
 ])
 
