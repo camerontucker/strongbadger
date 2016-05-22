@@ -159,6 +159,12 @@ body {
   .circlelogo {
     display:none;
   }
+  .cover-heading {
+    font-size: 1.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 62em) {
   .masthead,
@@ -176,12 +182,6 @@ body {
     .inner {
       padding: 0;
     }
-  }
-  .cover-heading {
-    font-size: 1.5rem;
-  }
-  .lead {
-    font-size: 1rem;
   }
 }
 
