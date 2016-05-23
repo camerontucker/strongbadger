@@ -1,7 +1,7 @@
 # Strongbadger Coffee House
 A coffee house website built on meteor 1.3 and angular 2
 
-# Contribute!
+# Contribute
 This is a community effort. Fork this repository, make some changes, and send us a pull request!
 
 # Installation
