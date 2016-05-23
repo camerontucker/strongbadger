@@ -17,15 +17,15 @@ a:hover {
 }
 
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: $secondary-text-color;
+.btn-secondary {
+  color: $primary-text-color;
+  background-color: $background-color;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: $primary-text-color;
   border: .05rem solid $primary-text-color;
+  &:hover, &:focus {
+    background-color: darkgrey;
+  }
 }
-
 
 /*
  * Base structure
