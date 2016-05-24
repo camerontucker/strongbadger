@@ -12,6 +12,7 @@ import { APP_BASE_HREF } from '@angular/common';
 import { ComingSoon } from './imports/coming-soon/coming-soon.ts';
 import { Coffee } from './imports/coffee/coffee.ts';
 import { EventList } from './imports/event-list/event-list.ts';
+import { About } from './imports/about/about.ts';
 import { Footer } from './imports/footer/footer.ts';
 
 @Component({
@@ -22,6 +23,7 @@ import { Footer } from './imports/footer/footer.ts';
 @RouteConfig([
   { path: '/coming-soon', name: 'ComingSoon', component: ComingSoon, useAsDefault: true },
   { path: '/coffee', name: 'Coffee', component: Coffee },
+  { path: '/about', name: 'About', component: About },
   { path: '/events', name: 'EventList', component: EventList }
 ])
 

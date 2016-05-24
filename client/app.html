@@ -3,12 +3,20 @@
     <div class="cover-container">
       <div class="masthead clearfix">
         <div class="inner">
-          <img class="masthead-brand logo" src="/images/logo.jpg" />
-          <img class="masthead-brand circlelogo" src="/images/circlelogo.png" />
+          <a class="masthead-brand" [routerLink]="['/ComingSoon']">
+            <img class="logo" src="/images/logo.jpg" />
+            <img class="circlelogo" src="/images/circlelogo.png" />
+          </a>
           <nav class="nav nav-masthead">
             <a class="nav-link" [routerLink]="['/ComingSoon']">Coming Soon</a>
-            <a class="nav-link" [routerLink]="['/EventList']">Events</a>
             <a class="nav-link" [routerLink]="['/Coffee']">Coffee</a>
+            <a class="nav-link" [routerLink]="['/EventList']">Events</a>
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+              &#9776;
+            </button>
+            <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+              <a class="nav-link" [routerLink]="['/About']">About</a>
+            </div>
           </nav>
         </div>
       </div>
