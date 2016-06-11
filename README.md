@@ -13,8 +13,9 @@ This is a community effort. Fork this repository, make some changes, and send us
 
 # Deployment on Ubuntu
 1. Install Docker https://docs.docker.com/engine/installation/linux/ubuntulinux/
+2. Install MongoDB. Type 'apt-get install -y mongodb'
 2. git clone https://github.com/camerontucker/strongbadger
-3. type 'curl https://install.meteor.com/ | sh'
+3. Install Meteor. Type 'curl https://install.meteor.com/ | sh'
 4. cd strongbadger
 5. type 'meteor npm install'
 6. Build and run this docker https://github.com/meteorhacks/meteord (be very patient the meteor CDN can be slow)
